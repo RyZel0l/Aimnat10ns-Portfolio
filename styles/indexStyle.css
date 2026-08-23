@@ -1,0 +1,121 @@
+body {
+    background-color: #3b0000;
+    background-image: linear-gradient(135deg, #500000 0%, #410000 40%, #150000 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+
+    cursor: url('../imgs/cursor.png') 16 16, auto;
+}
+
+a {
+    cursor: inherit;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.2s ease;
+}
+
+.navbar a.main {
+    color: rgb(165, 0, 0);
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.starimg img {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro {
+    width: min(700px, 90%);
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.name {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.CustomColor {
+    color: red;
+}
+
+.jx1 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.jx2 {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-top: 35px;
+}
+
+.examples-Btn {
+    color: rgb(255, 0, 0);
+    transition: color 0.2s ease;
+}
+
+.examples-Btn:hover {
+    color: #ffa8af;
+}
+
+/* Hire Me Button */
+
+.hireme {
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 25px auto 0;
+    font-size: 30px;
+
+    background-color: #410000;
+    background-image: linear-gradient(165deg, #e63946 0%, #9d0208 48%, #370617 100%);
+    border-radius: 50px;
+    border-color: #150000;
+    width: 150px;
+    height: 50px;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+
+    border-color: #460707;
+    border-width: 5px;
+
+}
+
+.hireme:hover {
+    transform: scale(1.1);
+}
+
+.hireme:active {
+    transform: scale(0.95);
+}
+
+
+
+/* ANIMATIONS */

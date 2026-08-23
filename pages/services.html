@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="logo" rel="icon" type="image/png" href="../imgs/1.jpg">
+
+    <title>Services</title>
+    <link rel="stylesheet" href="../styles/ServicesStyle.css">
+    <script src="../scripts/servicesScript.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a class="main" href="services.html">Services</a>
+        <a href="example.html">Examples</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <main class="services-page">
+        <h1>Services</h1>
+        <p class="services-intro">Roblox scripting and UI development for your next project.</p>
+
+        <div class="service-filters" aria-label="Filter services">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="scripting">Scripting</button>
+            <button class="filter-button" type="button" data-filter="ui">UI</button>
+            <button class="filter-button" type="button" data-filter="support">Support</button>
+        </div>
+
+        <section class="service-list" aria-label="Available services">
+            <article class="service-card" data-category="scripting">
+                <h2>Gameplay Scripting</h2>
+                <p>Custom mechanics, abilities, tools, inventories, and other Roblox gameplay systems.</p>
+            </article>
+
+            <article class="service-card" data-category="ui">
+                <h2>UI Development</h2>
+                <p>Clean, responsive interfaces built with React, Rojo, or Roblox Studio.</p>
+            </article>
+
+            <article class="service-card" data-category="scripting">
+                <h2>ModuleScripts</h2>
+                <p>Reusable and organized Lua modules that keep your project easier to maintain.</p>
+            </article>
+
+            <article class="service-card" data-category="support">
+                <h2>Bug Fixing</h2>
+                <p>Find script errors, repair existing systems, and improve game performance.</p>
+            </article>
+        </section>
+
+        <a class="contact-button" href="contacts.html">Contact Me</a>
+    </main>
+</body>
+
+</html>
