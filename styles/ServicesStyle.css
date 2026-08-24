@@ -77,12 +77,18 @@ a {
     font: inherit;
     text-decoration: none;
     cursor: pointer;
+    transition: background 0.2s ease;
 }
 
 .filter-button:hover,
 .filter-button.active,
 .contact-button:hover {
     background: #a50000;
+}
+
+.filter-button:hover,
+.contact-button:hover {
+    background: #700000;
 }
 
 .service-list {
@@ -94,8 +100,17 @@ a {
 
 .service-card {
     padding: 22px;
-    border: 1px solid #762020;
+    border: 2px solid #762020;
     background: rgba(20, 0, 0, 0.55);
+    border-radius: 50px;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0s linear 0s;
+    will-change: opacity, transform;
 }
 
 .service-card h2 {
@@ -111,12 +126,16 @@ a {
 }
 
 .service-card.hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95);
+    pointer-events: none;
 }
 
 .contact-button {
     display: inline-block;
     margin-top: 28px;
+    transition: background 0.2s ease;
 }
 
 @media (max-width: 600px) {
