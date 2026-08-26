@@ -61,27 +61,28 @@ a {
 }
 
 .text {
-    width: 500px;
-    height: 150px;
-
     display: flex;
     align-items: center;
-    align-self: center;
     justify-content: center;
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin: 20px auto 0;
+    margin: 0;
 }
 
 .socials {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px 50px;
     margin-top: 200px;
+}
 
+.socials .text {
+    grid-column: 1 / -1;
+    min-height: 60px;
 }
 
 .twitter:hover,
@@ -95,6 +96,7 @@ a {
 /* Phone */
 @media (max-width: 600px) {
     .socials {
+        grid-template-columns: repeat(2, 110px);
         gap: 20px;
         margin-top: 250px;
     }

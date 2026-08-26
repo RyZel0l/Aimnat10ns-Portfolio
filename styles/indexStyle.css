@@ -46,6 +46,7 @@ a {
     align-items: center;
     position: inherit;
     transform: translateY(-260px);
+    pointer-events: none;
 }
 
 .status .text {
@@ -139,6 +140,42 @@ a {
 
 .hireme:active {
     transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .starimg {
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0;
+    }
+
+    .status {
+        position: static;
+        flex-direction: column;
+        margin: 16px auto 0;
+        transform: none;
+    }
+
+    .status .green,
+    .status .red {
+        width: 20px;
+        transform: none;
+        order: 1;
+    }
+
+    .status .text {
+        margin: 6px 0 0;
+        order: 2;
+    }
+
+    .intro {
+        margin: 24px auto 0;
+    }
 }
 
 
