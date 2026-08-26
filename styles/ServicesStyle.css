@@ -125,6 +125,12 @@ a {
     color: #f4dddd;
 }
 
+.service-card .service-price {
+    margin-top: 14px;
+    color: #ff8f8f;
+    font-weight: bold;
+}
+
 .service-card.hidden {
     opacity: 0;
     visibility: hidden;
