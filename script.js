@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var HireButton = document.getElementById("hire-btn")
 
     HireButton.addEventListener("click", function () {
-        window.location.replace("../pages/contacts.html")
+        window.location.replace("pages/contacts.html")
     })
 });
 
