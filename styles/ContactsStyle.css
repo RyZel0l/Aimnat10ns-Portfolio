@@ -46,6 +46,8 @@ a {
 
 .twitter,
 .instagram,
+.discord,
+.gmail,
 .tiktok {
     width: 150px;
     height: 150px;
@@ -69,6 +71,8 @@ a {
 
 .twitter:hover,
 .instagram:hover,
+.discord:hover,
+.gmail:hover,
 .tiktok:hover {
     transform: scale(1.1);
 }
