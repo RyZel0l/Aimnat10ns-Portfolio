@@ -40,9 +40,34 @@ a {
     object-fit: cover;
 }
 
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    transform: translateY(-260px);
+}
+
+.status .text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.status .green {
+    width: 16px;
+    position: inherit;
+    transform: translateX(2px);
+}
+
+.status .red {
+    width: 16px;
+    position: inherit;
+    transform: translateX(2px);
+}
+
 .intro {
     width: min(700px, 90%);
-    margin: 60px auto 0;
+    margin: -35px auto 0;
     text-align: center;
 }
 
